@@ -9,7 +9,8 @@
 Console.Write("Ведите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-while ()
-{
-    
-}
+int num1 = number / 10;
+int num2 = number % 10;
+
+Console.Write($"{num1}, {num2}");
+
