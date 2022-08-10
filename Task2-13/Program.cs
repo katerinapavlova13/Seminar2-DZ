@@ -6,11 +6,12 @@
 //32679 -> 6
 
 
-Console.Write("Ведите целое число: ");
+Console.Write("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int num1 = number / 10;
-int num2 = number % 10;
+Console.Write(number > 99 ? number.ToString()[2] : '-');
+Console. = Console.ReadLine(true);
 
-Console.Write($"{num1}, {num2}");
+
+
 
