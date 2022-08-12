@@ -6,12 +6,31 @@
 //32679 -> 6
 
 
-Console.Write("Введите целое число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-Console.Write(number > 99 ? number.ToString()[2] : '-');
-Console. = Console.ReadLine(true);
+int FuncThird(int number)
+{
+    if (number > 99)
+    {
+        while (number > 1000 && number < -1000)
+    {
+    number = number / 10;
+    }
+    return number % 10;
+    }
+    else return -1;
+}
+int res = FuncThird(num);
 
+if(res != -1)
+{
+    Console.Write($"Третья цифра числа {res}");
+}
+else
+{
+    Console.Write("Третьей цифры нет!");
+}
 
 
 
